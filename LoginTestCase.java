@@ -27,7 +27,7 @@ public class LoginTestCase {
         Assert.assertEquals(actualMessage, expectedMessage );
     }
     public void loginTestCaseWhenPassIsNull(){
-        System.out.println(baseURL);
+        driver.get(baseURL);
         WebElement username=driver.findElement(By.name("txtUsername"));
         username.sendKeys("Admin");
         WebElement firstname=driver.findElement(By.name("txtPassword"));
@@ -40,7 +40,7 @@ public class LoginTestCase {
         System.out.println(actualMessage);
     }
     public void loginTestCaseWhenPassIncorrect(){
-        System.out.println(baseURL);
+        driver.get(baseURL);
         WebElement username=driver.findElement(By.name("txtUsername"));
         username.sendKeys("Admin");
         WebElement firstname=driver.findElement(By.name("txtPassword"));
@@ -53,7 +53,7 @@ public class LoginTestCase {
         System.out.println(actualMessage);
     }
     public void loginsuccesful(){
-        System.out.println(baseURL);
+        driver.get(baseURL);
         WebElement username=driver.findElement(By.name("txtUsername"));
         username.sendKeys("Admin");
         WebElement firstname=driver.findElement(By.name("txtPassword"));
