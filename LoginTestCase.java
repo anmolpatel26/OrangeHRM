@@ -14,7 +14,7 @@ public class LoginTestCase {
     }
 
     public void loginTestCaseWhenBothIdNull(){
-        System.out.println(baseURL);
+        driver.get(baseURL);
         WebElement username=driver.findElement(By.name("txtUsername"));
         username.sendKeys("");
         WebElement firstname=driver.findElement(By.name("txtPassword"));
